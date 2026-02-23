@@ -1,41 +1,69 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiny Spark Apps</title>
+    <title>Tiny Spark Apps – Fun & Colorful Android Apps</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff6ec4, #7873f5);
+            background: linear-gradient(135deg, #ff7ac3, #8a7bff);
+            background-attachment: fixed;
             color: white;
             text-align: center;
             padding: 50px;
         }
+
         .glass {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(12px);
-            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(14px);
+            border-radius: 22px;
             padding: 30px;
-            max-width: 600px;
+            max-width: 650px;
             margin: auto;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.25);
         }
-        h1 {
-            margin-top: 0;
+
+        nav.nav {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            padding: 15px;
+            margin-bottom: 40px;
         }
+
+        nav.nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        nav.nav a:hover {
+            text-decoration: underline;
+        }
+
         a {
             color: #fff;
             font-weight: bold;
         }
     </style>
 </head>
+
 <body>
+    <nav class="glass nav">
+        <a href="index.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <div class="glass">
         <h1>Tiny Spark Apps</h1>
-        <p>Développeuse Android indépendante — Apps fun, colorées et modernes.</p>
-        <p><a href="https://play.google.com/store/apps/details?id=TON_ID_APP">Voir mon application</a></p>
+        <p>Independent Android developer — fun, colorful and modern apps.</p>
+        <p><a href="score-pop.html">Discover my app</a></p>
     </div>
 </body>
 </html>
+
