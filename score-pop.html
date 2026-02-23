@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Pop – Fun Score Counter App | Tiny Spark Apps</title>
+
     <meta name="description" content="Score Pop is a fun, colorful and modern score counter app for all your games. Simple, fast and perfect for friends, family and board game nights.">
-    
+
+    <!-- Modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             background: linear-gradient(145deg, #ff9acb 0%, #c08bff 40%, #7f8bff 100%);
             background-attachment: fixed;
             color: white;
@@ -18,16 +28,15 @@
         }
 
         .glass {
-    background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(18px) saturate(180%);
-    -webkit-backdrop-filter: blur(18px) saturate(180%);
-    border-radius: 24px;
-    padding: 35px;
-    max-width: 750px;
-    margin: 40px auto;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-}
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            border-radius: 24px;
+            padding: 35px;
+            max-width: 850px;
+            margin: 40px auto;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
         }
 
         nav.nav {
@@ -41,17 +50,16 @@
         nav.nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
-            letter-spacing: 0.5px;
+            font-weight: 600;
         }
 
         nav.nav a:hover {
             text-decoration: underline;
         }
 
-        a {
-            color: #fff;
-            font-weight: bold;
+        .logo {
+            width: 120px;
+            margin-bottom: 20px;
         }
 
         .button {
@@ -61,6 +69,7 @@
             border-radius: 14px;
             margin-top: 15px;
             border: 1px solid rgba(255,255,255,0.4);
+            font-weight: 600;
         }
 
         .button:hover {
@@ -77,6 +86,12 @@
         h2 {
             margin-top: 0;
         }
+
+        footer {
+            margin-top: 60px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
     </style>
 </head>
 
@@ -90,13 +105,17 @@
         <a href="contact.html">Contact</a>
     </nav>
 
+    <!-- Logo -->
+    <img src="logo.png" alt="Tiny Spark Logo" class="logo">
+
     <!-- Hero Section -->
     <div class="glass">
         <h1>Score Pop</h1>
         <p>A fun, colorful and modern score counter app for all your games.</p>
 
         <a class="button" href="https://play.google.com/store/apps/details?id=com.tinyspark.scorepop" target="_blank">
-            Get it on Google Play
+            <span class="material-symbols-rounded" style="vertical-align: middle;">smartphone</span>
+            &nbsp; Get it on Google Play
         </a>
     </div>
 
@@ -112,7 +131,7 @@
     <!-- Features -->
     <div class="glass">
         <h2>Features</h2>
-        <ul style="list-style:none; padding:0;">
+        <ul style="list-style:none; padding:0; line-height: 1.8;">
             <li>🎉 Fun and colorful interface</li>
             <li>⚡ Ultra-fast score editing</li>
             <li>👥 Add as many players as you want</li>
@@ -128,7 +147,7 @@
         <p>(Coming soon)</p>
 
         <div class="screenshots">
-            <!-- When ready, add your images like this:
+            <!-- Add your images later:
             <img src="images/scorepop1.png" alt="Score Pop screenshot 1">
             <img src="images/scorepop2.png" alt="Score Pop screenshot 2">
             -->
@@ -166,6 +185,10 @@
         </p>
         <p><a href="privacy-score-pop.html">Privacy Policy</a></p>
     </div>
+
+    <footer>
+        © 2026 Tiny Spark Apps — All rights reserved.
+    </footer>
 
 </body>
 </html>
