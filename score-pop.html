@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score Pop – Fun Score Counter App | Tiny Spark Apps</title>
+    <title>Score Pop – Score Counter App for Games | Tiny Spark Apps</title>
 
-    <meta name="description" content="Score Pop is a fun, colorful and modern score counter app for all your games. Simple, fast and perfect for friends, family and board game nights.">
+    <!-- SEO -->
+    <meta name="description" content="Score Pop is a fast, modern and colorful score counter app for all your games. Simple, intuitive and perfect for board games, cards, and family nights.">
+    <meta name="keywords" content="score pop, score counter app, score keeper, compteur de points, board games, android score app, tiny spark apps">
 
-    <!-- Modern font -->
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Score Pop – Score Counter App">
+    <meta property="og:description" content="A fast and modern score counter app for all your games.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Score Pop – Score Counter App">
+    <meta name="twitter:description" content="A fast and modern score counter app for all your games.">
+
+    <!-- Font + Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
 
     <!-- Favicon -->
@@ -20,23 +31,32 @@
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(145deg, #ff9acb 0%, #c08bff 40%, #7f8bff 100%);
-            background-attachment: fixed;
             color: white;
             text-align: center;
             padding: 40px;
+
+            /* Premium dark gradient + animation */
+            background: linear-gradient(120deg, #0d0d16, #1a1440, #2a1a60, #1a1440, #0d0d16);
+            background-size: 400% 400%;
+            animation: gradientFlow 22s ease infinite;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .glass {
-            background: rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(18px) saturate(180%);
             -webkit-backdrop-filter: blur(18px) saturate(180%);
             border-radius: 24px;
             padding: 35px;
             max-width: 850px;
             margin: 40px auto;
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
         }
 
         nav.nav {
@@ -58,39 +78,49 @@
         }
 
         .logo {
-            width: 120px;
+            width: 200px;
             margin-bottom: 20px;
         }
 
         .button {
             display: inline-block;
-            background: #ffffff33;
+            background: #ffffff22;
             padding: 12px 22px;
             border-radius: 14px;
             margin-top: 15px;
             border: 1px solid rgba(255,255,255,0.4);
             font-weight: 600;
+            color: white;
+            text-decoration: none;
         }
 
         .button:hover {
-            background: #ffffff55;
+            background: #ffffff33;
         }
 
         .screenshots img {
             width: 180px;
             border-radius: 18px;
             margin: 10px;
-            border: 2px solid rgba(255,255,255,0.3);
-        }
-
-        h2 {
-            margin-top: 0;
+            border: 2px solid rgba(255,255,255,0.25);
         }
 
         footer {
             margin-top: 60px;
             font-size: 14px;
-            opacity: 0.8;
+            opacity: 0.7;
+        }
+
+        /* Placeholder AdSense zone (inactive) */
+        .ad-placeholder {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 600px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.05);
+            border: 1px dashed rgba(255,255,255,0.25);
+            font-size: 14px;
+            opacity: 0.6;
         }
     </style>
 </head>
@@ -108,10 +138,15 @@
     <!-- Logo -->
     <img src="logo.png" alt="Tiny Spark Logo" class="logo">
 
+    <!-- Optional AdSense placeholder -->
+    <div class="ad-placeholder">
+        Ad placement (inactive). Add your AdSense code here later.
+    </div>
+
     <!-- Hero Section -->
     <div class="glass">
         <h1>Score Pop</h1>
-        <p>A fun, colorful and modern score counter app for all your games.</p>
+        <p>A fast, colorful and modern score counter app for all your games.</p>
 
         <a class="button" href="https://play.google.com/store/apps/details?id=com.tinyspark.scorepop" target="_blank">
             <span class="material-symbols-rounded" style="vertical-align: middle;">smartphone</span>
@@ -123,7 +158,7 @@
     <div class="glass">
         <h2>What is Score Pop?</h2>
         <p>
-            Score Pop is a simple and intuitive score counter designed for friends, family, and board game lovers.  
+            Score Pop is a simple and intuitive score counter designed for friends, family, and board game lovers.
             Whether you're playing cards, party games, or tabletop games, Score Pop helps you track points quickly and easily.
         </p>
     </div>
@@ -134,7 +169,7 @@
         <ul style="list-style:none; padding:0; line-height: 1.8;">
             <li>🎉 Fun and colorful interface</li>
             <li>⚡ Ultra-fast score editing</li>
-            <li>👥 Add as many players as you want</li>
+            <li>👥 Add unlimited players</li>
             <li>🔢 Positive or negative points</li>
             <li>📊 Clear and modern layout</li>
             <li>🌙 Always readable, even in low light</li>
@@ -154,12 +189,16 @@
         </div>
     </div>
 
-    <!-- How to use -->
+    <!-- SEO Section: Score Counter App -->
     <div class="glass">
-        <h2>How to Use</h2>
-        <p>1. Add players</p>
-        <p>2. Tap + or – to update scores</p>
-        <p>3. Enjoy your game night!</p>
+        <h2>Why use a score counter app?</h2>
+        <p>
+            A score counter app makes game nights easier, faster and more fun.
+            No more paper, no more mistakes — just tap to update scores instantly.
+        </p>
+        <p>
+            Score Pop is perfect for board games, card games, party games, family nights and friendly competitions.
+        </p>
     </div>
 
     <!-- FAQ -->
@@ -180,10 +219,10 @@
     <div class="glass">
         <h2>Privacy Policy</h2>
         <p>
-            Score Pop does not collect personal data.  
+            Score Pop does not collect personal data.
             Read the full privacy policy here:
         </p>
-        <p><a href="privacy-score-pop.html">Privacy Policy</a></p>
+        <p><a href="privacy-score-pop.html" style="color:white; text-decoration:underline;">Privacy Policy</a></p>
     </div>
 
     <footer>
