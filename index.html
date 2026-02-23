@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiny Spark Apps – Fun & Colorful Android Apps</title>
+
+    <!-- Modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+
+    <!-- Favicon (replace with your own file) -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             background: linear-gradient(145deg, #ff9acb 0%, #c08bff 40%, #7f8bff 100%);
             background-attachment: fixed;
             color: white;
             text-align: center;
-            padding: 50px;
+            padding: 40px;
         }
 
         .glass {
-    background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(18px) saturate(180%);
-    -webkit-backdrop-filter: blur(18px) saturate(180%);
-    border-radius: 24px;
-    padding: 35px;
-    max-width: 750px;
-    margin: 40px auto;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-}
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            border-radius: 24px;
+            padding: 35px;
+            max-width: 750px;
+            margin: 40px auto;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
 
         nav.nav {
             display: flex;
@@ -38,7 +48,7 @@
         nav.nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
             letter-spacing: 0.5px;
         }
 
@@ -46,14 +56,21 @@
             text-decoration: underline;
         }
 
-        a {
-            color: #fff;
-            font-weight: bold;
+        .logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 14px;
+            opacity: 0.8;
         }
     </style>
 </head>
 
 <body>
+
     <nav class="glass nav">
         <a href="index.html">Home</a>
         <a href="apps.html">Apps</a>
@@ -61,12 +78,18 @@
         <a href="contact.html">Contact</a>
     </nav>
 
+    <!-- Logo (upload logo.png in your repo) -->
+    <img src="logo.png" alt="Tiny Spark Logo" class="logo">
+
     <div class="glass">
         <h1>Tiny Spark Apps</h1>
         <p>Independent Android developer — fun, colorful and modern apps.</p>
         <p><a href="score-pop.html">Discover my app</a></p>
     </div>
+
+    <footer>
+        © 2026 Tiny Spark Apps — All rights reserved.
+    </footer>
+
 </body>
 </html>
-
-
