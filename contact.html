@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact – Tiny Spark Apps</title>
+
+    <meta name="description" content="Contact Tiny Spark Apps for questions, feedback or suggestions about Android applications.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-           background: linear-gradient(145deg, #ff9acb 0%, #c08bff 40%, #7f8bff 100%);
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #ff9acb 0%, #c08bff 40%, #7f8bff 100%);
             background-attachment: fixed;
             color: white;
             text-align: center;
@@ -16,16 +23,16 @@
         }
 
         .glass {
-    background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(18px) saturate(180%);
-    -webkit-backdrop-filter: blur(18px) saturate(180%);
-    border-radius: 24px;
-    padding: 35px;
-    max-width: 750px;
-    margin: 40px auto;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-}
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            border-radius: 24px;
+            padding: 35px;
+            max-width: 850px;
+            margin: 40px auto;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
 
         nav.nav {
             display: flex;
@@ -38,11 +45,22 @@
         nav.nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         nav.nav a:hover {
             text-decoration: underline;
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 14px;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -56,6 +74,8 @@
         <a href="contact.html">Contact</a>
     </nav>
 
+    <img src="logo.png" alt="Tiny Spark Logo" class="logo">
+
     <div class="glass">
         <h1>Contact</h1>
 
@@ -64,6 +84,10 @@
 
         <p>I’m always happy to hear feedback, suggestions, or questions about my apps.</p>
     </div>
+
+    <footer>
+        © 2026 Tiny Spark Apps — All rights reserved.
+    </footer>
 
 </body>
 </html>
