@@ -5,31 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apps – Tiny Spark Apps</title>
 
+    <!-- SEO -->
+    <meta name="description" content="Discover all Tiny Spark Apps: fun, colorful and modern Android applications.">
+    <meta name="keywords" content="tiny spark apps, android apps, score pop, score counter, score keeper">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Tiny Spark Apps – Applications">
+    <meta property="og:description" content="Fun, colorful and modern Android apps.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tiny Spark Apps – Apps">
+    <meta name="twitter:description" content="Discover all Tiny Spark Android apps.">
+
+    <!-- Font + Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
 
     <style>
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(145deg, #ff9acb 0%, #c08bff 40%, #7f8bff 100%);
-            background-attachment: fixed;
             color: white;
             text-align: center;
             padding: 40px;
+
+            /* Premium dark gradient + animation */
+            background: linear-gradient(120deg, #0d0d16, #1a1440, #2a1a60, #1a1440, #0d0d16);
+            background-size: 400% 400%;
+            animation: gradientFlow 22s ease infinite;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .glass {
-            background: rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(18px) saturate(180%);
             -webkit-backdrop-filter: blur(18px) saturate(180%);
             border-radius: 24px;
             padding: 35px;
             max-width: 750px;
             margin: 40px auto;
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
         }
 
         nav.nav {
@@ -50,16 +77,34 @@
             text-decoration: underline;
         }
 
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
         footer {
             margin-top: 60px;
             font-size: 14px;
-            opacity: 0.8;
+            opacity: 0.7;
+        }
+
+        /* Placeholder AdSense zone (inactive) */
+        .ad-placeholder {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 600px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.05);
+            border: 1px dashed rgba(255,255,255,0.25);
+            font-size: 14px;
+            opacity: 0.6;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <nav class="glass nav">
         <a href="index.html">Home</a>
         <a href="apps.html">Apps</a>
@@ -67,9 +112,18 @@
         <a href="contact.html">Contact</a>
     </nav>
 
+    <!-- Logo -->
+    <img src="logo.png" alt="Tiny Spark Logo" class="logo">
+
+    <!-- Optional AdSense placeholder -->
+    <div class="ad-placeholder">
+        Ad placement (inactive). Add your AdSense code here later.
+    </div>
+
+    <!-- Main content -->
     <div class="glass">
         <h1>My Applications</h1>
-        <p><a href="score-pop.html">Score Pop</a></p>
+        <p><a href="score-pop.html" style="color:white; text-decoration:underline;">Score Pop</a></p>
     </div>
 
     <footer>
