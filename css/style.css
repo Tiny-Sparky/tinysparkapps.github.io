@@ -1,0 +1,135 @@
+/* ====== GLOBAL RESET ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====== GLOBAL BODY ====== */
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(120deg, #0d0d16, #1a1440, #2a1a60, #1a1440, #0d0d16);
+    background-size: 400% 400%;
+    animation: gradientFlow 22s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ====== NAVIGATION ====== */
+nav.nav {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+nav.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity .2s;
+}
+
+nav.nav a:hover {
+    opacity: 0.7;
+}
+
+/* ====== GLASS CARD ====== */
+.glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px) saturate(180%);
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 850px;
+    margin: 40px auto;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+/* ====== LOGO ====== */
+.logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+/* ====== TITLES ====== */
+h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* ====== TEXT ====== */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 18px;
+}
+
+/* ====== BUTTON ====== */
+.button, .cta {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 12px 22px;
+    border-radius: 14px;
+    margin-top: 15px;
+    border: 1px solid rgba(255,255,255,0.4);
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: background .2s;
+}
+
+.button:hover, .cta:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+/* ====== SCREENSHOTS ====== */
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.screenshots img {
+    width: 180px;
+    border-radius: 18px;
+    border: 2px solid rgba(255,255,255,0.25);
+}
+
+/* ====== VIDEO ====== */
+.video-container {
+    margin-top: 20px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    margin-top: 60px;
+    font-size: 14px;
+    opacity: 0.7;
+}
