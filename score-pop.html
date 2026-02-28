@@ -20,9 +20,8 @@
     <meta name="twitter:title" content="Score Pop – Score Counter App">
     <meta name="twitter:description" content="A fast and modern score counter app for all your games.">
 
-    <!-- Font + Icons -->
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
@@ -34,8 +33,6 @@
             color: white;
             text-align: center;
             padding: 40px;
-
-            /* Premium dark gradient + animation */
             background: linear-gradient(120deg, #0d0d16, #1a1440, #2a1a60, #1a1440, #0d0d16);
             background-size: 400% 400%;
             animation: gradientFlow 22s ease infinite;
@@ -45,18 +42,6 @@
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
-        }
-
-        .glass {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(18px) saturate(180%);
-            -webkit-backdrop-filter: blur(18px) saturate(180%);
-            border-radius: 24px;
-            padding: 35px;
-            max-width: 850px;
-            margin: 40px auto;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
         }
 
         nav.nav {
@@ -71,20 +56,58 @@
             color: white;
             text-decoration: none;
             font-weight: 600;
+            transition: opacity .2s;
         }
 
         nav.nav a:hover {
-            text-decoration: underline;
+            opacity: 0.7;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px) saturate(180%);
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 850px;
+            margin: 40px auto;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
         }
 
         .logo {
-            width: 200px;
+            width: 180px;
             margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 34px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 18px;
         }
 
         .button {
             display: inline-block;
-            background: #ffffff22;
+            background: rgba(255,255,255,0.15);
             padding: 12px 22px;
             border-radius: 14px;
             margin-top: 15px;
@@ -92,17 +115,29 @@
             font-weight: 600;
             color: white;
             text-decoration: none;
+            transition: background .2s;
         }
 
         .button:hover {
-            background: #ffffff33;
+            background: rgba(255,255,255,0.25);
+        }
+
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+            margin-top: 20px;
         }
 
         .screenshots img {
             width: 180px;
             border-radius: 18px;
-            margin: 10px;
             border: 2px solid rgba(255,255,255,0.25);
+        }
+
+        .video-container {
+            margin-top: 20px;
         }
 
         footer {
@@ -110,51 +145,31 @@
             font-size: 14px;
             opacity: 0.7;
         }
-
-        /* Placeholder AdSense zone (inactive) */
-        .ad-placeholder {
-            margin: 30px auto;
-            padding: 20px;
-            max-width: 600px;
-            border-radius: 16px;
-            background: rgba(255,255,255,0.05);
-            border: 1px dashed rgba(255,255,255,0.25);
-            font-size: 14px;
-            opacity: 0.6;
-        }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="glass nav">
+    <nav class="nav">
         <a href="index.html">Home</a>
         <a href="apps.html">Apps</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Logo -->
     <img src="logo.png" alt="Tiny Spark Logo" class="logo">
 
-    <!-- Optional AdSense placeholder -->
-    <div class="ad-placeholder">
-        Ad placement (inactive). Add your AdSense code here later.
-    </div>
-
-    <!-- Hero Section -->
+    <!-- HERO -->
     <div class="glass">
         <h1>Score Pop</h1>
         <p>A fast, colorful and modern score counter app for all your games.</p>
 
         <a class="button" href="https://play.google.com/store/apps/details?id=com.tinyspark.scorepop" target="_blank">
-            <span class="material-symbols-rounded" style="vertical-align: middle;">smartphone</span>
-            &nbsp; Get it on Google Play
+            Get it on Google Play
         </a>
     </div>
 
-    <!-- Description -->
+    <!-- DESCRIPTION -->
     <div class="glass">
         <h2>What is Score Pop?</h2>
         <p>
@@ -163,10 +178,10 @@
         </p>
     </div>
 
-    <!-- Features -->
+    <!-- FEATURES -->
     <div class="glass">
         <h2>Features</h2>
-        <ul style="list-style:none; padding:0; line-height: 1.8;">
+        <ul style="list-style:none; padding:0; line-height: 1.8; font-size:18px;">
             <li>🎉 Fun and colorful interface</li>
             <li>⚡ Ultra-fast score editing</li>
             <li>👥 Add unlimited players</li>
@@ -176,7 +191,7 @@
         </ul>
     </div>
 
-    <!-- Screenshots -->
+    <!-- SCREENSHOTS -->
     <div class="glass">
         <h2>Screenshots</h2>
         <p>(Coming soon)</p>
@@ -185,11 +200,26 @@
             <!-- Add your images later:
             <img src="images/scorepop1.png" alt="Score Pop screenshot 1">
             <img src="images/scorepop2.png" alt="Score Pop screenshot 2">
+            <img src="images/scorepop3.png" alt="Score Pop screenshot 3">
             -->
         </div>
     </div>
 
-    <!-- SEO Section: Score Counter App -->
+    <!-- VIDEO -->
+    <div class="glass">
+        <h2>Gameplay Video</h2>
+        <p>(Coming soon)</p>
+
+        <div class="video-container">
+            <!-- Add your video later:
+            <video controls width="300">
+                <source src="videos/scorepop-demo.mp4" type="video/mp4">
+            </video>
+            -->
+        </div>
+    </div>
+
+    <!-- SEO SECTION -->
     <div class="glass">
         <h2>Why use a score counter app?</h2>
         <p>
@@ -215,7 +245,7 @@
         <p>Absolutely! Add as many as you need.</p>
     </div>
 
-    <!-- Privacy Policy -->
+    <!-- PRIVACY -->
     <div class="glass">
         <h2>Privacy Policy</h2>
         <p>
